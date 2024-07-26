@@ -25,7 +25,6 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
-
           </ul>
         </div>
       </div>
@@ -33,8 +32,43 @@
   </header>
   <main class="container my-5">
     <section>
-     
-    </section>
+    <h1>Taxonomia de generaciones</h1>
+    <form action="post">
+      <section>
+        <label for="name">Indique su nombre</label>
+        <input type="text" name="name" id="name" minlength="2" maxlength="20" required>
+      </section>
+      <section>
+        <label for="edad">indique su edad</label>
+        <input type="number" name="edad" id="edad" minlength="2" maxlength="3" required>
+      </section>
+      <section>
+        <label for="DNI">indique su DNI(sin puntos ni espacios)</label>
+        <input type="number" name="DNI" id="DNI" minlength="6" maxlength="10" required>
+      </section>
+      <section>
+        <label for="sexo">Indique su sexo</label>
+        <select name="sexo" id="sexo">
+          <option value="sin">Prefiero no decirlo</option>
+          <option value="H">Hombre</option>
+          <option value="M">Mujer</option>
+        </select>
+      </section>
+      <section>
+        <label for="peso">Indique su peso(KG)</label>
+        <input type="number" name="peso" id="peso" minlength="2" maxlength="3" required>
+      </section>
+      <section>
+        <label for="altura">Indique su altura(CM)</label>
+        <input type="number" name="altura" id="altura" minlength="2" maxlength="3" required>
+      </section>
+      <section>
+        <label for="nacimiento">Indique su año de nacimiento</label>
+        <input type="number" name="nacimiento" id="nacimiento" minlength="4" maxlength="4" required>
+      </section>
+      <button type="submit" class="btn btn-outline-info">Enviar</button>
+    </form>
+  </section>
   </main>
   <footer class="text-center py-4 bg-dark-subtle">
     <p>&copy; todos los derechos reservados</p>
