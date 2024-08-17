@@ -3,7 +3,7 @@ class Persona {
   constructor(nombre, edad, DNI, sexo, peso, altura, anioDeNac) {
     this.nombre = nombre;
     this.edad = edad;
-    this.DNI = Math.floor(10000000 + Math.random() * 90000000);
+    this.DNI = DNI ;
 
     switch (sexo) {
         case "M":
